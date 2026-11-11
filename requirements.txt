@@ -1,0 +1,16 @@
+# --- API ---
+fastapi>=0.115
+uvicorn[standard]>=0.30
+
+# --- Config & validation ---
+pydantic>=2.7
+pydantic-settings>=2.3
+
+# --- Agent / LLM ---
+langgraph>=0.2
+langchain-core>=0.3
+langchain-google-genai>=2.0
+    
+# --- Dev ---
+pytest>=8.0
+ruff>=0.5
