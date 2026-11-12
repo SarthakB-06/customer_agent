@@ -10,4 +10,4 @@ def get_llm() -> BaseChatModel:
         raise RuntimeError("GOOGLE_API_KEY is not set. Copy .env.example to .env and add your key.")
     # temperature=0: support answers should be as repeatable as possible, which also
     # makes eval runs less noisy.
-    return ChatGoogleGenerativeAI(model=s.llm_model, google_api_key=s.google_api_key, temperature=0)
+    return ChatGoogleGenerativeAI(model=s.llm_model, google_api_key=s.google_api_key, temperature=0, api_version="v1beta")
